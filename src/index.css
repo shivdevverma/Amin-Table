@@ -12,10 +12,10 @@ code {
     monospace;
 }
 .toprow{
-  padding: 20px 40px 10px 40px;
+  padding: 10px;
 }
 .statusbtn{
-  width: 100px!important;
+  width: 80px!important;
 }
 .tabledata{
   width: 85%;

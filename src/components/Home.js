@@ -6,6 +6,7 @@ const Home = () => {
         {
             id: 1,
             username: "shivverma",
+            email: "shiv@gmail.com",
             phone: 9876563423,
             designation: "Software Engineer",
             Userid: "shiv123",
@@ -14,6 +15,7 @@ const Home = () => {
         {
             id: 2,
             username: "rahulsingh",
+            email: "rahul@gmail.com",
             phone: 8876563400,
             designation: "Software trainee",
             Userid: "rahul190",
@@ -22,6 +24,7 @@ const Home = () => {
         {
             id: 3,
             username: "satyamdwivedi",
+            email: "satyam@gmail.com",
             phone: 7656342311,
             designation: "Software Developer",
             Userid: "satyam175",
@@ -30,15 +33,16 @@ const Home = () => {
         {
             id: 4,
             username: "rohitmishra",
+            email: "rohit@gmail.com",
             phone: 6656342367,
             designation: "Software Tester",
             Userid: "satyam165",
             status: "inactive"
         },
-
         {
             id: 5,
             username: "amitsingh",
+            email: "amit@gmail.com",
             phone: 7890543412,
             designation: "Manager",
             Userid: "palan443",
@@ -71,14 +75,14 @@ const Home = () => {
         <div className="container">
             <div className='tabledata'>
                 <div className="row toprow">
-                    <div className="col-sm-6">
+                    <div className="col-sm-5">
                         <div className="input-group">
-                            <div className="form-outline" data-mdb-input-init>
-                                <input type="search" className="form-control"
-                                    placeholder="Enter Username..."
-                                    ref={textInput}
-                                />
-                            </div>
+
+                            <input type="search" className="form-control"
+                                placeholder="Enter Username..."
+                                ref={textInput}
+                            />
+
                             <button type="button" className="btn btn-primary"
                                 onClick={handleSearchClick}>Search</button>
 
@@ -111,6 +115,7 @@ const Home = () => {
                         <tr>
                             <th scope="col">Sr.</th>
                             <th scope="col">User Name</th>
+                            <th scope="col">Email Id</th>
                             <th scope="col">Phone Number</th>
                             <th scope="col">Designation</th>
                             <th scope="col">User Id</th>
@@ -124,6 +129,7 @@ const Home = () => {
                                 <tr key={index}>
                                     <th>{index + 1}</th>
                                     <td>{item.username}</td>
+                                    <td>{item.email}</td>
                                     <td>{item.phone}</td>
                                     <td>{item.designation}</td>
                                     <td>{item.Userid}</td>
